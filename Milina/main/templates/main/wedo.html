@@ -1,0 +1,47 @@
+{% extends 'main/base.html'%}
+{% load static %}
+{% block title %}{{ title }}Milina{% endblock %}
+
+{% block content %}
+
+      <!-- what we do  -->
+      <div class="we_do slin">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 offset-lg-1 col-md-12">
+                  <div class="row">
+                     <div class="col-md-3 col-sm-6">
+                        <div class="we_box">
+                           <i><img src="{% static 'main/images/weicon1.png' %}" alt="#"/></i>
+                           <h3>Nail Art</h3>
+                           <p>All kinds of nail arts, we make designs of any complexity </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <div class="we_box">
+                           <i><img src="{% static 'main/images/weicon2.png' %}" alt="#"/></i>
+                           <h3>Manicure</h3>
+                           <p>A clean and high-quality manicure that will last a long time while maintaining beauty </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <div class="we_box">
+                           <i><img src="{% static 'main/images/weicon3.png' %}" alt="#"/></i>
+                           <h3>Pedicure</h3>
+                           <p>Clean pedicure for your pleasure, delicate heels and beautiful design will delight you </p>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <div class="we_box">
+                           <i><img src="{% static 'main/images/weicon4.png' %}" alt="#"/></i>
+                           <h3>Paraffin wax</h3>
+                           <p>Paraffin wax is a white or colorless soft, solid wax. It’s made from saturated hydrocarbons. </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end what we do  -->
+{% endblock %}

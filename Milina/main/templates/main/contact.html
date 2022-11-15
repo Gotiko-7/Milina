@@ -1,0 +1,26 @@
+{% extends 'main/base.html'%}
+{% load static %}
+{% block title %}{{ title }}Milina{% endblock %}
+
+{% block content %}
+
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 offset-md-3">
+
+                     <form method="post">
+                        {% csrf_token %}
+
+                        {{ form.as_p }}
+                        <input type="submit" value="Submit" class="send_btn">
+
+                     </form>
+               
+               </div>
+            </div>
+         </div>
+
+      <!-- end contact -->
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'main/base.html'%}
+{% load static %}
+{% block title %}{{ title }}Milina{% endblock %}
+
+{% block content %}
+
+<!-- about -->
+      <div class="about slin2">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>About Us</h2>
+                     <p>Our manicure studio "Milina" began its journey back in 2015. We have come a long and painstaking path in becoming a studio that provides quality services. In our salon you can get manicures, pedicures and spa treatments. Our craftsmen are highly qualified, so you can not worry that you will receive a poor quality service. We care about each of our clients and therefore our materials are only well-known brands such as E.Mi, Luxio, Imen and others. For each client, we select suitable materials for long-term wear of the material on the nails.
+ We are customer-oriented and always look forward to feedback. If there are controversial issues, we are ready to discuss every little thing, to solve any problem.
+We always conduct tests for our masters in theory and practice.
+We often hold promotions, give gifts for the holidays and are always waiting for you to visit.
+If you have any questions, you can always contact our managers and they will be happy to answer everything.
+With good wishes, General Director of the studio "Milina.</p>
+
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img src="{% static 'main/images/image_studio.jpg' %}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'main/base.html'%}
+{% load static %}
+{% block title %}{{ title }}Milina{% endblock %}
+
+{% block content %}
+
+ <div  class="experts slin2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Meet Our Experts</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-8 offset-lg-2 col-md-12">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div id="exp" class="experts_box">
+                           <div class="experts_img">
+                              <figure><img src="{% static 'main/images/blog1.jpg' %}" alt="#"/></figure>
+                           </div>
+                           <div class="meet">
+                              <h3>Jacob</h3>
+                              <p>He is our new master. He ended in "Mirz" school last year. He can do whole range of services. He is very gentle and lovely guy </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div id="exp" class="experts_box">
+                           <div class="experts_img">
+                              <figure><img src="{% static 'main/images/blog2.jpg' %}" alt="#"/></figure>
+                           </div>
+                           <div class="meet">
+                              <h3>Lonut</h3>
+                              <p>She is our basic master. Lonut ended "Mirz" school 3 years and
+raised her qualifications last moth.  </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div id="exp" class="experts_box">
+                           <div class="experts_img">
+                              <figure><img src="{% static 'main/images/blog3.jpg' %}" alt="#"/></figure>
+                           </div>
+                           <div class="meet">
+                              <h3>Irina</h3>
+                              <p>Irina is our top master. She ended school "Mirz" 5 years ago and always raises ger qualifications. </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end experts -->
+
+{% endblock %}

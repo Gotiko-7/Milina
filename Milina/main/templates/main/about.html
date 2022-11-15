@@ -1,0 +1,27 @@
+{% extends 'main/base.html'%}
+{% load static %}
+{% block title %}{{ title }}Milina{% endblock %}
+
+{% block content %}
+
+      <!-- about -->
+      <div class="about slin2">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>About Us</h2>
+                     <p>Nail studio "Milina" works for you every day from 10:00 to 22:00 seven days a week. We are pleased to inform you about our promotions: "30% discount on the first visit", "Bring a friend and get a 25% discount", "Cashback on all services in the amount of 5%".</p>
+                     <a href="{% url 'readmore' %}"><li><i class="Javascript:void(0)"></i>Read More</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img src="{% static 'main/images/about.jpg' %}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+{% endblock %}
